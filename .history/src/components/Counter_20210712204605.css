@@ -1,0 +1,17 @@
+.counter {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #b24242;
+  border-radius: 4px;
+  background-color: var(--blue);
+}
+
+.counter-input {
+  outline: none;
+  border: 0;
+  text-align: center;
+  width: 33%;
+}
