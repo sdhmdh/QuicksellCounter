@@ -5,6 +5,8 @@ const Input = (props) => {
     useEffect(() => {
         // listening to key up and key down events on input element
         inputRef.current.addEventListener('keydown', (e) => {
+            debugger
+            e.preventDefault();
             switch (e.keyCode) {
                 case 38:
                     props.onUpArrorw();
@@ -26,7 +28,7 @@ const Input = (props) => {
     }, []);
 
     return (
-        <input ref={inputRef} type="text" pattern="[0-9]*" className={props.class} value={props.value} onChange={props.onChange} />
+        <input ref={inputRef} className={props.class} value={props.value} onChange={props.onChange} />
     )
 }
 
